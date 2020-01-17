@@ -1,0 +1,77 @@
+html{
+  font-size: 62.5%; /*Reset para REMS - 62.5 = 10PX de 16px*/
+}
+
+body{
+  font-family: 'Cuprum', sans-serif;
+  font-size: 1.6rem;
+}
+/*Globales*/
+.contenedor {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+h1{
+  font-size: 3.5rem;
+}
+
+h2{
+  font-size: 3.1rem;
+
+}
+
+h3{
+  font-size: 2.7rem;
+}
+
+h4{
+  font-size: 2.4rem;
+}
+
+/*Header*/
+.side-header.inicio{
+  background-image: url(../images/background-header.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  min-height: 60rem;
+}
+
+.contenido-header {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contenido-header h1{
+color: #ffffff;
+padding-bottom: 3.5rem;
+max-width: 55rem;
+line-height: 1.2;
+}
+
+.barra{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 3rem;
+}
+
+/*Navegación*/
+
+.navegacion a{
+  color:#ffffff;
+  text-decoration: none;
+  font-size: 2rem;
+  margin-right: 2.5rem;
+}
+.navegacion a:hover{
+  color: #01BA93;
+}
+/*Pseudo selector que permite seleccionar el ultimo elemento*/
+.navegacion a:last-of-type{
+  margin: 0;
+}
+
