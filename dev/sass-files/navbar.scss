@@ -1,0 +1,17 @@
+@import 'variables';
+.menu__conainer  {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 3rem;
+}
+
+.navbar {
+  a{
+    color: $white-color;
+    text-decoration: none;
+    font-size: 2rem;
+    margin-right: 2.5rem;
+}
+
+}

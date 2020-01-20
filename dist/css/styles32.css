@@ -1,6 +1,6 @@
 html{
   box-sizing: border-box;
-  font-size: 62.5%; /*Reset para REMS - 62.5 = 10PX de 16px*/
+  font-size: 62.5%; 
 }
 
 *, *::before, *::after{

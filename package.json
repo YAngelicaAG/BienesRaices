@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/YAngelicaAG/BienesRaices/issues"
   },
-  "homepage": "https://github.com/YAngelicaAG/BienesRaices#readme"
+  "homepage": "https://github.com/YAngelicaAG/BienesRaices#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.2"
+  }
 }

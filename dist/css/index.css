@@ -1,0 +1,43 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  /*Reset para REMS - 62.5 = 10PX de 16px*/ }
+
+*, *::before, *::after {
+  box-sizing: inherit; }
+
+body {
+  font-family: 'Gayathri', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5; }
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto; }
+
+img {
+  max-width: 100%; }
+
+h1 {
+  font-size: 3.6rem; }
+
+h2 {
+  font-size: 3.1rem; }
+
+h3 {
+  font-size: 2.7rem; }
+
+h4 {
+  font-size: 2.4rem; }
+
+.menu__conainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 3rem; }
+
+.navbar a {
+  color: #ffff;
+  text-decoration: none;
+  font-size: 2rem;
+  margin-right: 2.5rem; }
