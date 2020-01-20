@@ -1,0 +1,19 @@
+{
+  "name": "bienesraices",
+  "version": "1.0.0",
+  "description": "Sitio web para venta de viviendas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YAngelicaAG/BienesRaices.git"
+  },
+  "author": "Angélica Aguilar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YAngelicaAG/BienesRaices/issues"
+  },
+  "homepage": "https://github.com/YAngelicaAG/BienesRaices#readme"
+}
