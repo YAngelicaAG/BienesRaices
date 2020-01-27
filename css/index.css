@@ -301,6 +301,7 @@ h4{
 .seccion-inferior{
   display: flex;
   justify-content: space-between;
+  padding-bottom: 2rem;
 }
 
 .seccion-inferior .blog{
