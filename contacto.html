@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Gayathri:100,400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
+  <title>Bienes Raices</title>
+</head>
+<body>
+  <header class="side-header">
+    <div class="contenedor contenido-header">
+      <div class="barra">
+        <a href="/">
+          <img height="auto" width="220px" src="images/logo.svg" alt="Logotipo de Bienes Raices">
+        </a>
+        <nav class="navegacion">
+          <a href="nosotros.html">Nosotros</a>
+          <a href="anuncios.html">Anuncios</a>
+          <a href="blog.html">Blog</a>
+          <a href="contacto.html">Contacto</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <h1 class="font-weight-100 centrar-texto">Contactanos </h1>
+  <img width="100%"src="https://images6.alphacoders.com/381/thumb-1920-381479.jpg" alt="Imagen piscina en casa">
+
+  <main class="contenedor seccion contenido-centrado">
+    <h2 class="font-weight-100 centrar-texto">Llena el formulario de contacto</h2>
+    <form action="">
+      <fieldset>
+        <legend>Información personal</legend>
+        <label for="nombre">Nombre </label>
+        <input id="nombre" type="text" placeholder="Tu nombre">
+
+        <label for="email">E-mail </label>
+        <input type="email" name="" id="email" placeholder="Tu correo electrónico" required>
+
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" placeholder="Tu teléfono" required>
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" placeholder="¡Dejanos tu mensaje y nos comunicaremos contigo pronto!"></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Información sobre propiedad</legend>
+        <label for="opciones">Vende o compra</label>
+        <select id="opciones">
+          <option value="" disabled selected>--Seleccione--</option>
+          <option value="Compra">Compra</option>
+          <option value="Vende">Vende</option>
+        </select>
+
+        <label for="cantidad">Cantidad</label>
+        <input type="number" id="cantidad" min="0" >
+      </fieldset>
+
+      <fieldset>
+        <legend>Contacto</legend>
+        <p>¿Como desea ser contactado?</p>
+        <label for="c-tel">Teléfono</label>
+        <input type="radio" id="c-tel" name="tipo-contacto" value="telefono">
+
+        <label for="c-email">E-mail</label>
+        <input type="radio" name="tipo-contacto" id="c-email" value="correo">
+        
+      </fieldset>
+
+    </form>
+  </main>
+
+  <footer class="site-footer seccion">
+    <div class="contenedor contenedor-footer">
+      <nav class="navegacion">
+        <a href="nosotros.html">Nosotros</a>
+        <a href="anuncios.html">Anuncios</a>
+        <a href="blog.html">Blog</a>
+        <a href="contacto.html">contacto</a>
+      </nav>
+      <p class="copyright">Todos los derechos reservados 2020 &copy;</p>
+    </div>
+  </footer>
+</body>
+</html>
