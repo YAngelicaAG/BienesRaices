@@ -89,6 +89,7 @@ h4{
 .boton-azul:hover{
   background-color: #579EFF;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .boton-morado{
@@ -101,6 +102,7 @@ h4{
   border: 1px solid #A157FF;
   color: #A157FF;
   background-color: #ffffff;
+  cursor: pointer;
 }
 
 
@@ -451,7 +453,51 @@ h4{
 }
 
 /*Contacto*/
+fieldset{
+  margin-bottom: 2.5rem;
+}
+legend{
+ font-size: 2.2rem;
+ color: #727272;
+}
+.container-content{
+  padding: 2rem 4rem 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 label{
   display: block;
+}
+
+/*Des-seleccionar determinado input*/
+input:not([type="submit"]), textarea, select{
+  margin-bottom: 2rem;
+}
+input:not([type="submit"]){
+  padding: 1rem;
+  font-size: 1.3rem;
+}
+  input:not([type="submit"]):focus{
+    outline: none;
+    border: 1px solid #01BA93;
+    box-shadow: 0 0 9px 0 #01BA93;
+    
+  }
+  textarea{
+    height: 20rem;
+  }
+  select{
+    -webkit-appearance: none;
+    appearance: none;
+    /*Quitarle la apariencia por default. Es importante incluir las dos propuedades para que funcione */
+  }
+
+.contenedor-radioButton{
+  display: flex;
+}
+
+.contenedor-radioButton label{
+  margin-left: 1rem;
 }

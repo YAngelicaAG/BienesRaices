@@ -33,42 +33,56 @@
     <form action="">
       <fieldset>
         <legend>Información personal</legend>
-        <label for="nombre">Nombre </label>
-        <input id="nombre" type="text" placeholder="Tu nombre">
+          <div class="container-content">
+            <label for="nombre">Nombre </label>
+            <input id="nombre" type="text" >
 
-        <label for="email">E-mail </label>
-        <input type="email" name="" id="email" placeholder="Tu correo electrónico" required>
+            <label for="email">E-mail </label>
+            <input type="email" name="" id="email" required>
 
-        <label for="telefono">Teléfono</label>
-        <input type="tel" id="telefono" placeholder="Tu teléfono" required>
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono"  required>
 
-        <label for="mensaje">Mensaje</label>
-        <textarea id="mensaje" placeholder="¡Dejanos tu mensaje y nos comunicaremos contigo pronto!"></textarea>
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" placeholder="Deja tu mensaje y nos comunicaremos contigo pronto!"></textarea>
+          </div>
       </fieldset>
 
       <fieldset>
         <legend>Información sobre propiedad</legend>
-        <label for="opciones">Vende o compra</label>
-        <select id="opciones">
-          <option value="" disabled selected>--Seleccione--</option>
-          <option value="Compra">Compra</option>
-          <option value="Vende">Vende</option>
-        </select>
-
-        <label for="cantidad">Cantidad</label>
-        <input type="number" id="cantidad" min="0" >
+          <div class="container-content">
+            <label for="opciones">Vende o compra</label>
+            <select id="opciones">
+              <option value="" disabled selected>--Seleccione--</option>
+              <option value="Compra">Compra</option>
+              <option value="Vende">Vende</option>
+            </select>
+            <label for="cantidad">Cantidad</label>
+            <input type="number" id="cantidad" min="0" >
+          </div>
       </fieldset>
 
       <fieldset>
         <legend>Contacto</legend>
-        <p>¿Como desea ser contactado?</p>
-        <label for="c-tel">Teléfono</label>
-        <input type="radio" id="c-tel" name="tipo-contacto" value="telefono">
+          <div class="container-content">
+            <p>¿Como desea ser contactado?</p>
+            <div class="contenedor-radioButton">
+              <input type="radio" id="c-tel" name="tipo-contacto" value="telefono">
+              <label for="c-tel">Teléfono</label>
+            </div>
+            <div class="contenedor-radioButton">
+              <input type="radio" name="tipo-contacto" id="c-email" value="correo">
+              <label for="c-email">E-mail</label>
+            </div>
+            <p>Si eligió teléfono, elija la fecha y hora</p>
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha">
 
-        <label for="c-email">E-mail</label>
-        <input type="radio" name="tipo-contacto" id="c-email" value="correo">
-        
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora" min="09:00" max="18:00">
+          </div>
       </fieldset>
+        <input type="submit" value="Enviar" class="boton boton-azul">
 
     </form>
   </main>
