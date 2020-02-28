@@ -184,6 +184,20 @@ h4 {
   }
 }
 
+.navegacion a::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background-color: #01BA93;
+  height: 1px;
+  transition: all 1s ease;
+}
+
 .navegacion a:hover {
     color: #01BA93;
 }
