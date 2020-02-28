@@ -203,18 +203,32 @@ h4 {
 
 
 /*Iconos nosotros*/
-
-.iconos-nosotros {
-    display: flex;
-    justify-content: space-between;
+.iconos-nosotros{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 
-/* Al usar justify-content: space-between; y flex-basis: calc(); permite separar el contenido sin necesidad de darle espacio a cada una de las cajas de contenido*/
-
-.icono {
-    flex-basis: calc(33.3% - 1rem);
-    text-align: center;
+@media (min-width: 768px){
+  .iconos-nosotros {
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  /* Al usar justify-content: space-between; y flex-basis: calc(); permite separar el contenido sin necesidad de darle espacio a cada una de las cajas de contenido*/
+}
+.icono{
+  text-align: center;
+  max-width: 60rem;
+  padding-left: 2rem;
+}
+@media (min-width: 768px){
+  .icono {
+    flex-basis: calc(33.3% - 3rem);
+    min-width: 35rem;
+    margin: 0 auto;
+  }
 }
 
 .icono.icono-size {
@@ -224,7 +238,6 @@ h4 {
 .icono h3 {
     text-transform: uppercase;
 }
-
 
 /*Anuncios*/
 
