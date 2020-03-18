@@ -246,17 +246,25 @@ h4 {
 
 /*Anuncios*/
 
-.contenedor-anuncios {
+@media (min-width: 768px){
+  .contenedor-anuncios {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+  }
+  .anuncio{
+    min-width: 35rem;
+  }
 }
-
 .anuncio {
-    flex: 0 0 calc(33.3% - 3rem);
     border: 1px solid #F4F3F3;
     background-color: #F4F3F3;
-    margin-bottom: 2rem;
+    margin-left: 6rem;
+    margin: 1rem auto;
+}
+@media (min-width: 768px){
+  .anuncio{
+    flex: 0 0 calc(33.4% - 1rem);
+  }
 }
 
 .imagen-anuncio {
@@ -329,7 +337,7 @@ h4 {
 }
 
 .contenido-contacto {
-    flex: 1;
+    flex: 0 0 90%;
     color: #ffffff;
 }
 
@@ -339,26 +347,37 @@ h4 {
 
 
 /*Seccion inferior*/
-
-.seccion-inferior {
+.blog{
+  display: grid;
+  grid-template-rows: auto repeat(2, 1fr);
+  justify-items: center;
+}
+@media (min-width: 768px){
+  .seccion-inferior {
     display: flex;
     justify-content: space-between;
     padding-bottom: 2rem;
-}
+  }
 
 .seccion-inferior .blog {
     flex-basis: 60%;
-}
+  }
 
 .seccion-inferior .testimoniales {
     flex-basis: calc(40% - 2rem);
+  }
 }
 
 .entrada-blog {
-    display: flex;
-    justify-content: space-between;
+    max-width: 50rem;
     align-items: center;
     margin-bottom: 2rem;
+}
+@media (min-width: 768px){
+  .entrada-blog{
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .entrada-blog .imagen {
@@ -371,9 +390,13 @@ h4 {
 
 .entrada-blog .container-imagen {
     flex-basis: 40%;
-    width: 40rem;
     height: 35rem;
     overflow: hidden;
+}
+@media (min-width: 768px){
+  .entrada-blog .container-imagen{
+    height: 35rem;
+  }
 }
 
 .container-imagen .imagen {
@@ -426,6 +449,7 @@ h4 {
     border-top-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
     font-weight: 100;
+    margin-bottom: 2rem;
 }
 
 .testimonial blockquote {
@@ -464,8 +488,14 @@ h4 {
 
 .contenedor-footer {
     padding: 3rem 0;
+    text-align: center;
+}
+
+@media (min-width: 768px){
+  .contenedor-footer{
     display: flex;
     justify-content: space-between;
+  }
 }
 
 
@@ -473,12 +503,14 @@ h4 {
 
 
 /*Nosotros*/
-
-.contenido-nosotros {
+@media (min-width: 768px){
+  .contenido-nosotros {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
     align-items: center;
+}
+  
 }
 
 .imagen-nosotros img {
